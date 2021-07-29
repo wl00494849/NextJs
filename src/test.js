@@ -1,4 +1,10 @@
-const optiontest = (num) => {
+
+class Select {
+  constructor(num){
+   this.num = num
+  }
+
+  optiontest = (num = this.num) => {
     var options = []
   
     for (var i = num; i < num + 5; i++) {
@@ -7,11 +13,14 @@ const optiontest = (num) => {
   
     return options
   }
-  
+}
+
+
   function SelectTest(props) {
+    let options = new Select(props.num)
     return (
       <select>
-        {optiontest(props.num)}
+        {options.optiontest()}
       </select>
     )
   };

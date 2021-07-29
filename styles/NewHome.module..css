@@ -1,0 +1,13 @@
+.nav{
+    list-style-type: none;   
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header{
+    color: aqua;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
